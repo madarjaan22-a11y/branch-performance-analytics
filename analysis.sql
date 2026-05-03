@@ -1,4 +1,3 @@
--- 1. checking variance (actual vs target)
 
 SELECT 
     branch_id,
@@ -7,9 +6,6 @@ SELECT
     revenue_target,
     revenue_actual - revenue_target AS variance
 FROM monthly_revenue;
-
-
--- 2. joining with branch names
 
 SELECT 
     b.branch_name,
@@ -22,7 +18,6 @@ JOIN branches b
 ON m.branch_id = b.branch_id;
 
 
--- 3. total performance per branch
 
 SELECT 
     b.branch_name,
@@ -33,8 +28,6 @@ ON m.branch_id = b.branch_id
 GROUP BY b.branch_name;
 
 
--- 4. ranking branches
-
 SELECT 
     b.branch_name,
     SUM(m.revenue_actual - m.revenue_target) AS total_variance,
@@ -43,9 +36,6 @@ FROM monthly_revenue m
 JOIN branches b
 ON m.branch_id = b.branch_id
 GROUP BY b.branch_name;
-
-
--- 5. final view with flags + patterns
 
 SELECT 
     b.branch_name,
