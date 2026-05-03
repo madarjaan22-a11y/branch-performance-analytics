@@ -1,0 +1,7 @@
+branch_name,total_actual,total_target,total_variance,performance_flag,performance_pattern
+Mumbai Central,1825000,1800000,25000,Performing,Strong but Inconsistent
+Bangalore North,1510000,1500000,10000,Performing,Strong but Inconsistent
+Delhi West,1430000,1440000,-10000,Underperforming,Declining / Unstable
+Hyderabad,785000,900000,-115000,Underperforming,Consistently Bad
+Pune East,925000,1050000,-125000,Underperforming,Consistently Bad
+Bangalore South,1210000,1350000,-140000,Underperforming,Consistently Bad
